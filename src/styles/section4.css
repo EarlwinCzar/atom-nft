@@ -1,0 +1,119 @@
+.section4{
+  width: 100%;
+  height: 160vh;
+  display: flex;
+  justify-content: center;
+}
+
+.section4-article{
+  width: 70%;
+  height: 100%;
+}
+
+.section4-article-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section4-header{
+  color: #42E492;
+  font-size: 63px;
+  display: flex;
+  justify-content: center;
+}
+
+.section4-article-cards{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+}
+
+.section4-article-card{
+  width: 528px;
+  height: 240px;
+  background-color: #181C4C;
+  padding: 30px 30px;
+  border-bottom: 20px #42E492 solid;
+  position: relative; /* Ensure the cards themselves are relatively positioned */
+
+}
+
+.section4-article-cards .special{
+  height: 270px;
+}
+
+.section4-article-card-header{
+  font-size: 30px;
+  color: #42E492;
+  margin-bottom: 15px;
+}
+
+.section4-article-card-description{
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  opacity: 0.9;
+}
+
+.section4-article-cards .section4-article-card:nth-child(even) {
+  transform: translateX(60%);
+  
+}
+
+.section4-article-cards .section4-article-card:nth-child(odd) {
+  transform: translateX(-60%);
+}
+
+.section4-article-cards .section4-article-card:nth-child(odd)::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: -53.6px; /* Adjusted to align in the middle */
+  width: 2px;
+  height: 110%; /* Adjust line thickness */
+  background-color: #ffffff; /* Adjust line color */
+  opacity: 30%;
+}
+
+.section4-article-cards .section4-article-card:nth-child(even)::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: -53.82px; /* Adjusted to align in the middle */
+  width: 2px;
+  height: 150%; /* Adjust line thickness */
+  background-color: #ffffff; /* Adjust line color */
+  opacity: 30%;
+}
+
+.section4-article-cards .section4-article-card:nth-child(even)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  border-top: 25px solid transparent; /* Adjust the size of the caret */
+  border-bottom: 25px solid transparent; /* Adjust the size of the caret */
+  border-right: 30px solid #181C4C; /* Adjust the color of the caret */
+}
+
+.section4-article-cards .section4-article-card:nth-child(odd)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+  border-top: 25px solid transparent; /* Adjust the size of the caret */
+  border-bottom: 25px solid transparent; /* Adjust the size of the caret */
+  border-left: 30px solid #181C4C; /* Adjust the color of the caret */
+}
+
+
+
+

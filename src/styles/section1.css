@@ -1,0 +1,89 @@
+.section1{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.section1-article{
+  display: flex;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1-card-1{
+  width: 512px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.section1-card-1-header{
+  font-size: 63px;
+  color: #42E492;
+}
+
+.section1-card-1-description{
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: white;
+  font-weight: 400;
+  opacity: 90%;
+}
+
+/* Card 2 */
+
+.section1-card-2{
+  width: 512px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section1-card-img-group{
+  position: relative;
+}
+
+.section1-img-1{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 100px;
+}
+
+.section1-img-2{
+  position: absolute;
+  top: -280px;
+  width: 600px;
+}
+
+.section1-img-3{
+  position: absolute;
+  top: 70px;
+  right: -570px;
+  width: 170px;
+}
+
+.section1-button{
+  margin-top: 30px;
+  padding: 20px 100px;
+  color: white;
+  background-color: #42E492;
+  border: none;
+  font-size: 2rem;
+  box-shadow: 
+    2.5px 2.5px 0px 1px black,
+    5px 5px 0px 1px white;
+    transition: box-shadow 0.3s ease; 
+}
+  
+  .section1-button:hover {
+    box-shadow: 
+      4px 4px 10px 1px black,
+      8px 8px 10px 1px white;
+  }
